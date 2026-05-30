@@ -26,3 +26,4 @@ statsig/
 
 # Plugins (machine-installed; remove this line to sync plugins)
 plugins/
+stats-cache.json
