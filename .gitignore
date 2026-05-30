@@ -1,0 +1,28 @@
+# Credentials and auth (NEVER commit)
+.credentials.json
+*.credentials.json
+mcp-needs-auth-cache.json
+
+# Per-machine permission grants
+settings.local.json
+
+# Session history and runtime state (machine-local)
+projects/
+sessions/
+session-env/
+shell-snapshots/
+history.jsonl
+todos/
+plans/
+debug/
+local/
+
+# Caches and runtime artifacts
+cache/
+backups/
+statsig/
+*.log
+*.tmp
+
+# Plugins (machine-installed; remove this line to sync plugins)
+plugins/

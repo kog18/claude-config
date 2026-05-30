@@ -1,0 +1,15 @@
+{
+  "alwaysThinkingEnabled": true,
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f PROGRESS.md ] || [ -f RESUME.md ]; then echo '## Project state loaded from disk:'; echo; if [ -f PROGRESS.md ]; then echo '--- PROGRESS.md ---'; cat PROGRESS.md; echo; fi; if [ -f RESUME.md ]; then echo '--- RESUME.md ---'; cat RESUME.md; fi; else echo 'No PROGRESS.md or RESUME.md in this directory — fresh session.'; fi; true"
+          }
+        ]
+      }
+    ]
+  }
+}
